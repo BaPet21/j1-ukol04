@@ -46,7 +46,7 @@ public class HlavniProgram {
     List<Integer> vylosovanaCisla = Objects.requireNonNull(sportka.vylosovanaCisla(), "Chybí vylosovaná čísla.");
     Integer dodatkoveCislo = Objects.requireNonNull(sportka.dodatkoveCislo(), "Chybí dodatkové číslo.");
 
-    if (vylosovanaCisla.size() != 6) {
+      if (vylosovanaCisla.size() != 6) {
       throw new IllegalArgumentException(String.format("Vylosovaných čísel musí být 6, ve skutečnosti jich je %d.", vylosovanaCisla.size()));
     }
 
